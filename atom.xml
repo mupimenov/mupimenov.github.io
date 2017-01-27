@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+<<<<<<< HEAD
 	<title><![CDATA[scon.pro]]></title>
 	<link href="http://mupimenov.github.io/atom.xml" rel="self"/>
 	<link href="http://mupimenov.github.io/"/>
@@ -7,10 +8,20 @@
 	<id>http://mupimenov.github.io/</id>
 	<author>
 		<name><![CDATA[Пименов Михаил]]></name>
+=======
+	<title><![CDATA[My Octopress Blog]]></title>
+	<link href="http://mupimenov.github.io/atom.xml" rel="self"/>
+	<link href="http://mupimenov.github.io/"/>
+	<updated>2017-01-26T20:59:52+03:00</updated>
+	<id>http://mupimenov.github.io/</id>
+	<author>
+		<name><![CDATA[Your Name]]></name>
+>>>>>>> 10b6ac742dd54a1d0e5c4ff8b87dc06d56fb2bc6
 		
 	</author>
 	<generator uri="http://octopress.org/">Octopress</generator>
 	
+<<<<<<< HEAD
 	<entry>
 		
 			<title type="html"><![CDATA[Вопросы по C++ (часть 2)]]></title>
@@ -741,4 +752,6 @@ C = 220 мкФ (50В, ESR = 0,7 Ом). Vripple = Iripple * ESR = 0,7 В.</li>
 		</content>
 	</entry>
 	
+=======
+>>>>>>> 10b6ac742dd54a1d0e5c4ff8b87dc06d56fb2bc6
 </feed>
