@@ -1,0 +1,120 @@
+
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta content="" name="description">
+  <meta content="Пименов Михаил" name="author">
+  <title>Контроллер для гидропоники — scon.pro</title>
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/default.css" rel="stylesheet">
+  <link href="/atom.xml" rel="alternate" title="scon.pro" type="application/atom+xml">
+  <link href="/stylesheets/syntax.css" type="text/css" rel="stylesheet" />
+</head>
+  <body>
+    <header>
+      <nav>
+        <h3>
+          <a href="/">Блог</a>
+          <a href="/blog/archives">Архивы</a>
+          <a href="/about">О</a>
+        </h3>
+      </nav>
+    </header>
+    <section>
+  <header>
+    <time datetime="2015-07-25T08:22:01+03:00">25.07.2015</time>
+    <h1><a href="/blog/2015/07/25/controller-for-hydroponics/">Контроллер для гидропоники</a></h1>
+  </header>
+  <article>
+    <p>В один прекрасный день я узнал о гидропонике. Это технология выращивания растений без использования грунта. Растение помещается в искусственную влажную и, вместе с тем, хорошо аэрируемую и обогащённую минералами среду. Это создаёт лучшие по сравнению с естественной средой условия для роста растения.</p>
+
+<p>Детальное знакомство с гидропоникой показало, что для интенсификации роста растения (и повышения урожайности) нужно следить за множеством параметров создаваемой искусственной среды.</p>
+
+<p>Среди таких параметров:</p>
+
+<ul>
+<li>температура воздуха;</li>
+<li>влажность воздуха;</li>
+<li>минеральный состав питательного раствора;</li>
+<li>чистота минерального раствора и его pH;</li>
+<li>интенсивность освещения и (что важно) его спектральный состав;</li>
+<li>количество поступающего углекислого газа в часы бодрствования растения.</li>
+</ul>
+
+
+<p>Очевидно, что обеспечить соблюдение всех параметров в ручном режиме является трудно осуществимой задачей. Необходимы технические средства для автоматизации процесса выращивания растений.</p>
+
+<p>Такая необходимость и желание опробовать свои знания в области электроники привели к тому, что появился проект выходного дня под условным названием &ldquo;Контроллер для гидропоники&rdquo;.</p>
+
+<p>Контроллер обладает следующими характеристиками:</p>
+
+<ul>
+<li>4 реле, коммутирующие напряжение ~220 В (ток до 5 А);</li>
+<li>4 дискретных входа типа &ldquo;сухой контакт&rdquo;;</li>
+<li>2 выхода +12 В (ток до 100 мА);</li>
+<li>3 аналоговых входа для измерения сигнала напряжением от 0 до +10 В;</li>
+<li>часы реального времени;</li>
+<li>встроенная память объемом 4 Мбайт;</li>
+<li>сервисный USB-интерфейс (виртуальный COM-порт);</li>
+<li>последовательный интерфейс RS-485 для связи с внешними датчиками или исполнительными механизмами;</li>
+<li>возможность подключения к сети Ethernet для настройки режимов работы;</li>
+<li>4 выхода питания внешней нагрузки с токовым управлением (напряжение до +30 В, ток до 0,9 А);</li>
+<li>встроенный импульсный источник питания.</li>
+</ul>
+
+
+<p>Используемые микроконтроллеры:</p>
+
+<ul>
+<li>STM32F407Z - выполнение программы управления;</li>
+<li>STM32F031F - для оцифровки токов в цепях питания внешней нагрузки.</li>
+</ul>
+
+
+<p>Контроллер состоит из следующих блоков:</p>
+
+<ul>
+<li><a href="/blog/2015/07/26/power-supply-of-controller-for-hydroponics">источник питания</a>;</li>
+<li><a href="/blog/2015/08/02/main-block-of-controller-for-hydroponics">основной блок</a>;</li>
+<li><a href="/blog/2015/08/09/load-control-block-of-controller-for-hydroponics">блок управления внешней нагрузкой</a>.</li>
+</ul>
+
+
+    
+    
+  </article>
+</section>
+<div class="categories">
+  
+
+
+
+
+
+
+
+<a class='category' href='/blog/categories/stm32f031f/'>stm32f031f</a>, <a class='category' href='/blog/categories/stm32f407z/'>stm32f407z</a>, <a class='category' href='/blog/categories/ghidroponika/'>гидропоника</a>, <a class='category' href='/blog/categories/kontrollier/'>контроллер</a>
+
+
+  
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'sconpro';
+  (function() {
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+    <footer>
+  Копилефт <!--[if lte IE 8]><span style="filter: FlipH; -ms-filter: "FlipH"; display: inline-block;"><![endif]--><span style="-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); display: inline-block;">©</span><!--[if lte IE 8]></span><![endif]--> 2017 — Пименов Михаил
+  <address>
+  </address>
+</footer>
+  </body>
+</html>
